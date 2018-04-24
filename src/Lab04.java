@@ -33,13 +33,17 @@ public class Lab04 {
 		//l4.powerOfTwo(numberInput);
 		//l4.numBackward(numberInput);
 
-		//		System.out.println("Enter a size for a line");
-		//		int size = scanner.nextInt();
-		//		l4.straightLine(size);
+		//System.out.println("Enter a size for a line");
+		//int size = scanner.nextInt();
+		//l4.straightLine(size);
 
 		System.out.println("Enter a size for a box");
-		int boxSize = scanner.nextInt();
-		l4.boxMaker(boxSize);
+		//int boxSize = scanner.nextInt();
+		//l4.boxMaker(boxSize);
+
+		int shapeSize = scanner.nextInt();
+		//l4.shape7a(shapeSize);
+		l4.shape7b(shapeSize);
 	}
 
 
@@ -73,7 +77,7 @@ public class Lab04 {
 	 *
 	 * @param number
 	 */
-	public static void numBackward(int numberInput) {
+	public void numBackward(int numberInput) {
 		int num = numberInput;
 		int rev = 0;
 		int temp;
@@ -109,7 +113,7 @@ public class Lab04 {
 	 * refer to detailed instructions in lab description part 6
 	 */
 
-	public static void boxMaker(int boxSize) {
+	public void boxMaker(int boxSize) {
 		int height = 0;
 		while(height < boxSize){
 			height++;
@@ -139,28 +143,27 @@ public class Lab04 {
 	 *  refer to detailed instructions in lab description part 7a
 	 */
 
-	public static void shape7a(int number) {
-
-		// declare and initialize your variables first, if any then start writing your code
-
-
-
+	public void shape7a(int shapeSize) {
+		for(int j=1;j<shapeSize;j+=2){
+			for(int i=0;i<j;i++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
-
 
 	/**
 	 * void method to print a shape that is an "X" pattern with arms of 3 asterisks each.
 	 * refer to detailed instructions in lab description part 7b
 	 */
 
-	public static void shape7b(int number) {
-
-		// declare and initialize your variables first, if any then start writing your code
-
-
-
+	public void shape7b(int shapeSize) {
+		int lineCount = 0;
+		while(lineCount < shapeSize){
+			lineCount++;
+			System.out.println("*");
+		}
 	}
-
 } // end class Lab4
 
 
